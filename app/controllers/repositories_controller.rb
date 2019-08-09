@@ -12,6 +12,6 @@ class RepositoriesController < ApplicationController
       req.params["client_id"] = '' # get it from github
       req.params["client_secret"] = ''
     end
-    
+    binding.pry
   end
 end
