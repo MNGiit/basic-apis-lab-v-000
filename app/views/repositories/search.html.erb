@@ -9,8 +9,9 @@
 <h2>Results:</h2>
 <ul>
   <% @items.each do |item| %>
-    <li></li>
-    <%= link_to item["html_url"], item["html_url"] %>
+    <li><%= item["name"] %>, <%= link_to item["html_url"], item["html_url"] %> <br>
     <%= item["description"] %>
-    
+    </li>
+  <% end %>
 </ul>
+<% end %>
