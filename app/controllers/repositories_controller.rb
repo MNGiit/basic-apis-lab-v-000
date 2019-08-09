@@ -17,6 +17,7 @@ class RepositoriesController < ApplicationController
     # binding.pry
     body = JSON.parse(resp.body)
     @items = body["items"]
+    binding.pry
     render :search
   end
 end
