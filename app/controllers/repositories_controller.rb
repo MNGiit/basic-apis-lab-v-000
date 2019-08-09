@@ -6,7 +6,7 @@ class RepositoriesController < ApplicationController
 
   def github_search
     resp = Faraday.get("https://api.github.com/search/repositories") do |req|
-      binding.pry
+      # binding.pry
     end
   end
 end
