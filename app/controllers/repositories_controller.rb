@@ -11,8 +11,8 @@ class RepositoriesController < ApplicationController
       # binding.pry
       # params = {"query"=>"tetris", "controller"=>"repositories", "action"=>"github_search"}
       req.params["q"] = params[:query]
-      req.params["client_id"] = '' # get it from github
-      req.params["client_secret"] = ''
+      req.params["client_id"] = '' # github app
+      req.params["client_secret"] = '' # github app
     end
     # binding.pry
     body = JSON.parse(resp.body)
